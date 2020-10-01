@@ -23,7 +23,7 @@ apply plugin: 'maven-publish'
       groupId = 'com.test.publish'
       artifactId = 'artifact'
 
-      artifact file("./test.zip")
+      artifact file("<path-to-file-you-want-to-publish")
     }
   }
 }

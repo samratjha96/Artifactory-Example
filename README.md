@@ -16,3 +16,10 @@ during `Getting Started`:
       }
     }
 ```
+and specify which file you want to deploy in this section:
+```
+artifact file("<path-to-file-you-want-to-publish")
+```
+
+Once done, you can run `./gradlew publish` to publish the artifact to the specified repo in artifactory. You can go back to the UI and find the repository with
+(hopefully) your artifact deployed
