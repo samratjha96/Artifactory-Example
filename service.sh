@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $1 = "down" ]] ; then
+if [[ $1 = "stop" ]] ; then
   echo "Stopping Artifactory services"
   docker rm $(docker stop $(docker ps -a -q --filter="name=artifactory" --filter="name=postgres" --format="{{.ID}}"))
 else
