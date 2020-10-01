@@ -23,3 +23,7 @@ artifact file("<path-to-file-you-want-to-publish")
 
 Once done, you can run `./gradlew publish` to publish the artifact to the specified repo in artifactory. You can go back to the UI and find the repository with
 (hopefully) your artifact deployed
+
+# Troubleshooting
+* Make sure there's no conflicting services running on port 9000
+* Make sure to remove `data` directory if having trouble logging in. It's probably persisting your login credentials from last time
